@@ -4,7 +4,7 @@
    
 ## Description
 This repository contains the datasets and MATLAB codes used in the research paper
-“Neural Network–Predicted SEIR Modelling of COVID-19 in Nepal with Interventions and PSO-Driven Meteorological Impact Analysis.”
+“Analysis of  Meteorological Effects on COVID-19 Dyanamics in Nepal through Neural Network– and PSO-Driven SEIR Modelling.”
 
 ## Contents
 1. Epidemic and meteorological data_Nepal.xlsx (final data used in Matlab)
