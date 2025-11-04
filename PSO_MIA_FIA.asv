@@ -68,7 +68,7 @@ phases = {
     {datetime(2022,12,01), datetime(2022,12,31), 0.05, 0.20, 0.84495}; % 18 Post-pandemic normalization
 };
 
-%% 3a) Construct daily NPI (u_t) and vaccination (v_t)
+%% 3b) Construct daily NPI (u_t) and vaccination (v_t)
 dates  = dates(:);
 n_days = numel(dates);
 u_t    = zeros(n_days,1);
@@ -111,6 +111,15 @@ if any(isnan(u_ts))
     if ~isempty(k) && k>1, u_ts(1:k-1) = u_ts(k); end
 end
 u_ts = min(max(u_ts, u_min), u_max);
+
+%% 4) Combined intervention (NPI + Vaccination) with lag -------------------
+u_combined = 1 - (1 - u_t) .* (1 - v_t .* vaccine_efficacy);
+u_combined = min(max(u_combined, u_min), u_max);
+
+% Apply time lag (e.g., 7 days) and smooth
+u_pad = [nan(time_lag,1); u_combined(1:end-time_lag)];
+u_ts  = movmean(u_pad, ma_window, 'omitnan','Endpoints','shrink');
+u_ts  = min(max(u_ts, u_min), u_max);   % clamp after smoothing
 
 %% 4(ii) Apply time lag to WEATHER (features: T2M, RH2M, WS2M)
 weather_features = [T2M, RH2M, WS2M]; % strictly 3 features
