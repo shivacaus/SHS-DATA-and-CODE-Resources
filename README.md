@@ -12,7 +12,7 @@ This repository contains the datasets and MATLAB codes used in the research pape
 3. population data of nepal.xlsx (time-varying population data used in 1)
 4. Covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx (Epidemic data transfered to 1, taking references from all sources)
 5. Meteororological data_NASApower.zip (meteorological data of 54 locations in Nepal, and an averaged data transfered to 1)
-6. matlab code for LSTM-PSO.zip (contains LSTM-SEIR-FORECAST.m, PSO-MIA-FIA.m, and regression_plot) with Epidemic and meteorological data_Nepal.xlsx
+6. matlab code for LSTM-PSO.zip (contains LSTM-SEIR-FORECAST.m, PSO-MIA-FIA.m, and regression_plot.m) with Epidemic and meteorological data_Nepal.xlsx
 7. Miscellenious 
 ## Feature
 This repository is designed to support teachers, students, researchers, journal editors, and reviewers working on epidemiological modeling
