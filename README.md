@@ -58,27 +58,27 @@ Note: To check installed toolboxes, run ver in the MATLAB Command Window.
 
 9. Extract SEIR_LSTM_DATA.zip. It contains 4 files.
 
-i)  Epidemic and meteorological data_Nepal.xlsx — Compiled Dataset
+i)  Epidemic and meteorological data_Nepal.xlsx — Compiled Dataset (from 2020-05-08 to 2022-12-31)
 This is the final dataset used in MATLAB. It was compiled by integrating time-varying population data, COVID-19 epidemiological records from multiple surveillance sources, and averaged meteorological data derived from 54 locations across Nepal.
 Source: compiled from files 2, 3, and 4 below.
 
 The remaining files document the compilation process and intermediate sources:
 ii)  population data of nepal.xlsx — time-varying population data used in the compilation of the main dataset.
 Sources:
-https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration,
-https://censusnepal.cbs.gov.np/Home/Index/EN,
+https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration (accessed: 2024-10-31)
+https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-10-25)
 (Migration = immigration - emigration)
 
 iii)  covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx — epidemiological data collected from multiple surveillance platforms and transferred to the main dataset.
 Sources:
-* World Health Organisation (WHO-Nepal): https://data.who.int/dashboards/covid19/data (filtered for Nepal)
-* Our World in Data (OWID): https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv (filtered for Nepal)
-* Worldometer: https://www.worldometers.info/coronavirus/country/nepal/ (Right Click >> View Page Source)
-* Johns Hopkins University (JHU): https://github.com/CSSEGISandData/COVID-19/tree/246b73fd28ebab168a764380a5cb62cb375c298d/csse_covid_19_data/csse_covid_19_time_series    (filtered for Nepal)
-* COVID-19 Dashboard, Ministry of Health and Population, Nepal. Accessed: 05 May 2023. https://covid19.mohp.gov.np/
+* World Health Organisation (WHO-Nepal): https://data.who.int/dashboards/covid19/data (accessed: 2025-02-26, filtered for Nepal)
+* Our World in Data (OWID): https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv (accessed: 2025-02-26, filtered for Nepal)
+* Worldometer: https://www.worldometers.info/coronavirus/country/nepal/ (accessed: 2025-02-26, Right Click >> View Page Source)
+* Johns Hopkins University (JHU): https://github.com/CSSEGISandData/COVID-19/tree/246b73fd28ebab168a764380a5cb62cb375c298d/csse_covid_19_data/csse_covid_19_time_series    (accessed: 2025-02-26, filtered for Nepal)
+* COVID-19 Dashboard, Ministry of Health and Population, Nepal. Accessed: 2023-05-05. https://covid19.mohp.gov.np/
 
 iv)  Meteorological data_NASApower.zip — raw meteorological data for 54 locations in Nepal. Station-level records were spatially averaged and transferred to the main dataset.
-Source: NASA POWER Data Access Viewer — https://power.larc.nasa.gov/data-access-viewer/
+Source: NASA POWER Data Access Viewer — https://power.larc.nasa.gov/data-access-viewer, accessed: 2025-03-08
 
 9. Features
 
@@ -92,7 +92,7 @@ This repository is publicly available for academic and research purposes. The co
 
 10. Citation
 
-Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. GitHub Repository. https://github.com/shivacaus/SHS-DATA-and-CODE-Resources/tree/Data-and-code-for-Journal
+Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. Zenodo. https://doi.org/10.5281/zenodo.19709234.
 
 11. Contact
 
