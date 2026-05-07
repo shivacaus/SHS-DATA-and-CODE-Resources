@@ -119,7 +119,7 @@ This repository is publicly available for academic and research purposes. The co
 
 10. Citation
 
-Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. Zenodo. https://doi.org/10.5281/zenodo.19709234.
+Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXXX. (complete doi number displayed here)
 
 11. Contact
 
