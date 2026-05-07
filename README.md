@@ -79,13 +79,14 @@ Source: compiled from files 2, 3, and 4 below.
 The remaining files document the compilation process and intermediate sources:
 
 ii)  population data of nepal.xlsx — time-varying population data used in the compilation of the main dataset.
+
 Sources:
 
-https://population.un.org/dataportal/data/indicators/55,59,65,49/locations/524/start/2020/end/2022/table/pivotbylocation?df=69f1e08c-f85b-4a89-aa35-8ff1f863f478 accessed: 2024-05-02
+* https://population.un.org/dataportal/data/indicators/55,59,65,49/locations/524/start/2020/end/2022/table/pivotbylocation?df=69f1e08c-f85b-4a89-aa35-8ff1f863f478 accessed: 2024-05-02
 
-https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration (accessed: 2024-04-10)
+* https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration (accessed: 2024-04-10)
 
-https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-04-10)
+* https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-04-10)
 
 iii)  covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx — epidemiological data collected from multiple surveillance platforms and transferred to the main dataset.
 
