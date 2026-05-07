@@ -35,7 +35,6 @@ iv) Epidemic and meteorological data_Nepal.xlsx --- Input data file used in MATL
 
 v) F30_fig_table_data.mat --- Pre-computed selected outputs file (MATLAB v7.3).
 
-vi) F30_full_n30.mat --- Pre-computed full outputs file (MATLAB v7.3) 
 
 5. Generating Figures and Tables
 
@@ -121,7 +120,7 @@ This repository is publicly available for academic and research purposes. The co
 
 10. Citation
 
-Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXXX. (complete doi number displayed here)
+Subedi, S.H. (2026). MAT_SEIR_LSTM — SEIR Model-Informed LSTM Framework for Analyzing COVID-19 Dynamics under Meteorological Features. Zenodo. https://doi.org/10.5281/zenodo.20063733. 
 
 11. Contact
 
