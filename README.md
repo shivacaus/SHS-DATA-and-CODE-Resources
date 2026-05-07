@@ -19,26 +19,28 @@ iii) README.md (this file).
 
 1. Download MAT_SEIR_LSTM.zip from this branch.
    
-2. Extract the archive. Keep all files in the same folder — scripts use relative paths and will fail if files are separated.
+2. Extract the archive. Keep all files in the same folder -- scripts use relative paths and will fail if files are separated.
    
 3. Open MATLAB, set the working directory to the extracted folder, and follow the instructions below.
    
 4. File Descriptions:
    
-i) SEIR_LSTM_SHS_F30.m — Main modelling script.
+i) SEIR_LSTM_SHS_F30.m --- Main modelling script.
 
-ii) param_tune_0406.m — Hyperparameter tuning/optimization script.
+ii) param_tune_0406.m --- Hyperparameter tuning/optimization script.
 
-iii) F30_fig_table_generation.m — Figure and table generation script.
+iii) F30_fig_table_generation.m --- Figure and table generation script.
 
-iv) Epidemic and meteorological data_Nepal.xlsx — Input data file used in MATLAB.
+iv) Epidemic and meteorological data_Nepal.xlsx --- Input data file used in MATLAB.
 
-v) F30_fig_table_data.mat — Pre-computed outputs file (MATLAB v7.3).
+v) F30_fig_table_data.mat --- Pre-computed selected outputs file (MATLAB v7.3).
+
+vi) F30_full_n30.mat --- Pre-computed full outputs file (MATLAB v7.3) 
 
 5. Generating Figures and Tables
 
 To reproduce all figures and tables from the pre-computed results, run F30_fig_table_generation.m in MATLAB.
-Requires F30_fig_table_data.mat in the same folder. No model training is performed — figures are generated directly from saved results and complete in seconds.
+Requires F30_fig_table_data.mat  or, F30_full_n30.mat in the same folder. No model training is performed -- figures are generated directly from saved results and complete in seconds.
 
 6. Full Model Run
 
@@ -70,7 +72,7 @@ Note: To check installed toolboxes, run ver in the MATLAB Command Window.
 
 9. Extract SEIR_LSTM_DATA.zip. It contains 4 files.
 
-i)  Epidemic and meteorological data_Nepal.xlsx — Compiled Dataset (from 2020-05-08 to 2022-12-31)
+i)  Epidemic and meteorological data_Nepal.xlsx --- Compiled Dataset (from 2020-05-08 to 2022-12-31)
 
 This is the final dataset used in MATLAB. It was compiled by integrating time-varying population data, COVID-19 epidemiological records from multiple surveillance sources, and averaged meteorological data derived from 54 locations across Nepal.
 
@@ -78,7 +80,7 @@ Source: compiled from files 2, 3, and 4 below.
 
 The remaining files document the compilation process and intermediate sources:
 
-ii)  population data of nepal.xlsx — time-varying population data used in the compilation of the main dataset.
+ii)  population data of nepal.xlsx --- time-varying population data used in the compilation of the main dataset.
 
 Sources:
 
@@ -88,7 +90,7 @@ Sources:
 
 * https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-04-10)
 
-iii)  covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx — epidemiological data collected from multiple surveillance platforms and transferred to the main dataset.
+iii)  covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx --- epidemiological data collected from multiple surveillance platforms and transferred to the main dataset.
 
 Sources:
 
@@ -102,9 +104,9 @@ Sources:
   
 * COVID-19 Dashboard, Ministry of Health and Population, Nepal: https://covid19.mohp.gov.np/ (Accessed: 2023-02-25)
 
-iv)  Meteorological data_NASApower.zip — raw meteorological data for 54 locations in Nepal. Station-level records were spatially averaged and transferred to the main dataset.
+iv)  Meteorological data_NASApower.zip --- raw meteorological data for 54 locations in Nepal. Station-level records were spatially averaged and transferred to the main dataset.
 
-Source: NASA POWER Data Access Viewer — https://power.larc.nasa.gov/data-access-viewer, (accessed: 2023-04-12)
+Source: NASA POWER Data Access Viewer --- https://power.larc.nasa.gov/data-access-viewer, (accessed: 2023-04-12)
 
 9. Features
 
