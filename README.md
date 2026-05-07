@@ -21,14 +21,14 @@ iii) README.md (this file).
    
 i) SEIR_LSTM_SHS_F30.m — Main modelling script.
 ii) param_tune_0406.m — Hyperparameter tuning/optimization script.
-iii) Fig_Table_generation.m — Figure and table generation script.
+iii) F30_fig_table_generation.m — Figure and table generation script.
 iv) Epidemic and meteorological data_Nepal.xlsx — Input data file used in MATLAB.
-v) v29_figs_lean.mat — Pre-computed results file (MATLAB v7.3).
+v) F30_fig_table_data.mat — Pre-computed outputs file (MATLAB v7.3).
 
 5. Generating Figures and Tables
 
-To reproduce all figures and tables from the pre-computed results, run Fig_Table_generation.m in MATLAB.
-Requires v29_figs_lean.mat in the same folder. No model training is performed — figures are generated directly from saved results and complete in a few minutes.
+To reproduce all figures and tables from the pre-computed results, run F30_fig_table_generation.m in MATLAB.
+Requires F30_fig_table_data.mat in the same folder. No model training is performed — figures are generated directly from saved results and complete in seconds.
 
 6. Full Model Run
 
@@ -65,20 +65,20 @@ Source: compiled from files 2, 3, and 4 below.
 The remaining files document the compilation process and intermediate sources:
 ii)  population data of nepal.xlsx — time-varying population data used in the compilation of the main dataset.
 Sources:
-https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration (accessed: 2024-10-31)
-https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-10-25)
-(Migration = immigration - emigration)
+https://population.un.org/dataportal/data/indicators/55,59,65,49/locations/524/start/2020/end/2022/table/pivotbylocation?df=69f1e08c-f85b-4a89-aa35-8ff1f863f478 accessed: 2024-05-02
+https://www.macrotrends.net/global-metrics/countries/npl/nepal/net-migration (accessed: 2024-04-10)
+https://censusnepal.cbs.gov.np/Home/Index/EN, (accessed: 2024-04-10)
 
 iii)  covid_19_data_references_JHU_WHO_OWID_Worldometer.xlsx — epidemiological data collected from multiple surveillance platforms and transferred to the main dataset.
 Sources:
-* World Health Organisation (WHO-Nepal): https://data.who.int/dashboards/covid19/data (accessed: 2025-02-26, filtered for Nepal)
-* Our World in Data (OWID): https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv (accessed: 2025-02-26, filtered for Nepal)
-* Worldometer: https://www.worldometers.info/coronavirus/country/nepal/ (accessed: 2025-02-26, Right Click >> View Page Source)
-* Johns Hopkins University (JHU): https://github.com/CSSEGISandData/COVID-19/tree/246b73fd28ebab168a764380a5cb62cb375c298d/csse_covid_19_data/csse_covid_19_time_series    (accessed: 2025-02-26, filtered for Nepal)
-* COVID-19 Dashboard, Ministry of Health and Population, Nepal. Accessed: 2023-05-05. https://covid19.mohp.gov.np/
+* World Health Organisation (WHO-Nepal): https://data.who.int/dashboards/covid19/data (accessed: 2023-02-26, filtered for Nepal)
+* Our World in Data (OWID): https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv (accessed: 2023-02-20, filtered for Nepal)
+* Worldometer: https://www.worldometers.info/coronavirus/country/nepal/ (accessed: 2023-02-26, Right Click >> View Page Source)
+* Johns Hopkins University (JHU): https://github.com/CSSEGISandData/COVID-19/tree/246b73fd28ebab168a764380a5cb62cb375c298d/csse_covid_19_data/csse_covid_19_time_series    (accessed: 2023-02-15, filtered for Nepal)
+* COVID-19 Dashboard, Ministry of Health and Population, Nepal: https://covid19.mohp.gov.np/ (Accessed: 2023-02-25)
 
 iv)  Meteorological data_NASApower.zip — raw meteorological data for 54 locations in Nepal. Station-level records were spatially averaged and transferred to the main dataset.
-Source: NASA POWER Data Access Viewer — https://power.larc.nasa.gov/data-access-viewer, accessed: 2025-03-08
+Source: NASA POWER Data Access Viewer — https://power.larc.nasa.gov/data-access-viewer, (accessed: 2023-04-12)
 
 9. Features
 
